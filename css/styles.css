@@ -942,10 +942,22 @@ textarea::placeholder {
   bottom: 5px;
 }
 
+.checkbox-input:checked + .checkbox-icon {
+  border-color: var(--accent-color);
+  background-color: var(--white-text);
+  background-image: url(../images/icons.svg#icon-icon-check);
+  background-size: contain;
+  background-origin: border-box;
+}
+
 .checkbox-icon {
+  display: inline-block;
   position: absolute;
   width: 16px;
   height: 16px;
+
+  border: 2px solid black;
+  border-radius: 3px;
 }
 
 .checkbox-link {
