@@ -837,6 +837,12 @@ img {
   padding: 11px 42px;
 }
 
+.form-modal:hover,
+.form-modal:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
 .form-group {
   width: 448px;
   margin-left: auto;
@@ -858,6 +864,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
   cursor: pointer;
 
   transition-property: border;
@@ -879,10 +886,6 @@ img {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-inside-forms:hover {
-  fill: var(--accent-color);
 }
 
 textarea {
@@ -923,7 +926,7 @@ textarea::placeholder {
 
 .label-checkbox {
   position: relative;
-  left: 1%;
+  left: 2.5%;
   text-align: center;
   margin-top: 10px;
 
@@ -944,8 +947,8 @@ textarea::placeholder {
 
 .checkbox-input:checked + .checkbox-icon {
   border-color: var(--accent-color);
-  background-color: var(--white-text);
-  background-image: url(../images/icons.svg#icon-icon-check);
+  background-color: var(--accent-color);
+  background-image: url(../images/icons.svg#icon-checkmark);
   background-size: contain;
   background-origin: border-box;
 }
@@ -953,6 +956,8 @@ textarea::placeholder {
 .checkbox-icon {
   display: inline-block;
   position: absolute;
+  left: 1px;
+  top: 4px;
   width: 16px;
   height: 16px;
 
