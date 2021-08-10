@@ -900,6 +900,7 @@ textarea {
   box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
+  outline: none;
 
   transition-property: fill;
   transition-duration: 250ms;
