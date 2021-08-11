@@ -949,9 +949,8 @@ textarea::placeholder {
 .checkbox-input:checked + .checkbox-icon {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
-  background-image: url(../images/icons.svg#icon-checkmark);
+  background-image: url(../images/iconcheck.svg);
   background-size: contain;
-  background-origin: border-box;
 }
 
 .checkbox-icon {
